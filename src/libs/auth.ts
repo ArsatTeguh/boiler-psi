@@ -5,7 +5,6 @@ import fetchAPI from "../config/fetch-api";
 import { keysToCamel } from "./mapper";
 import SsoResponse from "../interfaces/sso-response";
 
-
 // Fungsi untuk berkomunikasi dengan server menggunakan JWT dan token
 export const JWTAuthCommunicate = (server: string, token: any) => {
   return new Promise(async (resolve) => {

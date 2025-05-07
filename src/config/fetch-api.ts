@@ -29,7 +29,7 @@ export async function fetchAPI<T>({
 }: MakeRequest): Promise<ApiResponse<T>> {
   if (needsAuthorize) {
     // let token = await getParTok();
-    let token = ''
+    let token = "";
     if (!token) {
       token = (await getSsotok()) || "";
     }
