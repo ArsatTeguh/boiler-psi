@@ -1,0 +1,8 @@
+import * as yup from 'yup'
+
+export const categorySchema = yup.object({
+  email: yup.string().required('Email Harus diisi'),
+  password: yup.string().required('Password tidak boleh kosong'),
+})
+
+export type CategorySchema = yup.InferType<typeof categorySchema>
