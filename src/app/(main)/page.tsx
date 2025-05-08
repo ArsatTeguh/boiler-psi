@@ -6,6 +6,7 @@ import { Button, SelectItem } from "@heroui/react";
 import { categorySchema } from "../../schema/register";
 import FormSelect from "@/components/ui/select";
 import FormTextarea from "@/components/ui/textarea";
+import FormDatePicker from "@/components/ui/date-picker";
 
 const animals = [
   { key: "cat", label: "Cat" },
@@ -21,6 +22,7 @@ const Home = () => {
       password: "",
       category: "",
       description: "",
+      time:""
     },
     validationSchema: categorySchema,
     onSubmit: async (values) => {
@@ -81,6 +83,12 @@ const Home = () => {
           description="Informasi ini bisa diakses oleh umum"
           formik={formik}
         />
+
+          <FormDatePicker 
+          name='time'
+          formik={formik}
+          className=""
+          />
 
         <Button
           isDisabled={!(formik.isValid && formik.dirty)}
