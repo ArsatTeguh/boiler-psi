@@ -13,6 +13,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
         disableTransitionOnChange
       >
         <ToastProvider
+          placement="top-center"
           toastProps={{
             variant: "flat",
             radius: "md",

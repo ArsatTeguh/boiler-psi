@@ -20,7 +20,8 @@
     "swr": "^2.3.3",
     "winston": "^3.17.0",
     "winston-daily-rotate-file": "^5.0.0",
-    "yup": "^1.6.1"
+    "yup": "^1.6.1",
+    "zustand": "^5.0.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

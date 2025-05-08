@@ -7,3 +7,9 @@ export const categorySchema = yup.object({
 });
 
 export type CategorySchema = yup.InferType<typeof categorySchema>;
+
+export const loginSchema = yup.object({
+  email: yup.string().required("Email Harus diisi"),
+});
+
+export type LoginSchema = yup.InferType<typeof categorySchema>;
