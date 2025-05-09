@@ -11,8 +11,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
         attribute="class"
         defaultTheme="light"
         disableTransitionOnChange
-      >
-        <ToastProvider
+      > 
+        <ToastProvider 
           placement="top-center"
           toastProps={{
             variant: "flat",
