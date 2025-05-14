@@ -18,7 +18,6 @@ export default async function RootLayout({
       >
         <UserProvider user={user as ApiResponse<UserResponse>}>
           <div className="w-[calc(100%-16rem)] ml-auto p-4 min-h-screen ">
-          <Sidebar />
           {children}
           </div>
         </UserProvider>

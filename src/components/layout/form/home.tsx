@@ -1,12 +1,15 @@
 "use client";
 
 import { useFormik } from "formik";
-import FormInput from "../../components/ui/input";
+
 import { Button, SelectItem } from "@heroui/react";
-import { categorySchema } from "../../schema/register";
+import FormInput from "../../ui/input";
 import FormSelect from "@/components/ui/select";
 import FormTextarea from "@/components/ui/textarea";
 import FormDatePicker from "@/components/ui/date-picker";
+import { withAuth } from "@/utils/withAuth";
+import { categorySchema } from "@/schema/register";
+
 
 const animals = [
   { key: "cat", label: "Cat" },
@@ -102,4 +105,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default withAuth(['visitor', 'admin'], Home) 

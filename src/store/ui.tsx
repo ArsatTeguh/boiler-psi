@@ -14,6 +14,6 @@ export const globalStore = create<GlobalStore>()((set) => ({
   setOpenModal: (whichModal: string) => set({ openModal: whichModal }),
   loading: "",
   setLoading: (whichLoading: string) => set({ loading: whichLoading }),
-  isSidebarOpen: false,
+  isSidebarOpen: true,
   setIsSidebarOpen: (isSidebarOpen: boolean) => set({ isSidebarOpen }),
 }));
