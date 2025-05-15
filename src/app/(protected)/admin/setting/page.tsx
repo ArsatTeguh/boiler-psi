@@ -1,4 +1,6 @@
+import EventsTable from "@/components/table/tableWithAction";
+import { mockEvents } from "@/mocks/events-mock";
 
 export default function SettingPage() {
-    return <p> Setings</p>
+    return <EventsTable events={mockEvents} />
 }
